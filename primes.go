@@ -11,7 +11,7 @@ func main() {
 	n := 7
 	start := time.Now()
 
-	for n < 1e9 {
+	for n < 10000 {
 		add := true
 		for i := 0; float64(primes[i]) <= math.Sqrt(float64(n)); i++ {
 			if n%primes[i] == 0 {
